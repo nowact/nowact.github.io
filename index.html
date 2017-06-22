@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>Hexo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta property="og:type" content="website">
+<meta property="og:title" content="Hexo">
+<meta property="og:url" content="http://yoursite.com/index.html">
+<meta property="og:site_name" content="Hexo">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Hexo">
+  
+    <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  
+    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  
+  <link rel="stylesheet" href="/css/style.css">
+  
+
+</head>
+
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">Hexo</a>
+      </h1>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://yoursite.com"></form>
+      </div>
+    </div>
+  </div>
+</header>
+      <div class="outer">
+        <section id="main">
+  
+    <article id="post-charts-ios-port-of-MPAndroidChart" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2017/06/20/charts-ios-port-of-MPAndroidChart/" class="article-date">
+  <time datetime="2017-06-20T10:36:18.000Z" itemprop="datePublished">2017-06-20</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2017/06/20/charts-ios-port-of-MPAndroidChart/">charts ios port of MPAndroidChart</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="Class-List"><a href="#Class-List" class="headerlink" title="Class List"></a>Class List</h1><h2 id="ChartView"><a href="#ChartView" class="headerlink" title="ChartView"></a>ChartView</h2><p>@brief<br>@property list<br>ChartData  //管理多个数据集，每个数据集可以绘制一条独立的曲线</p>
+<h2 id="ChartData"><a href="#ChartData" class="headerlink" title="ChartData"></a>ChartData</h2><p>@property<br><code>NSArray&lt;DataSet&gt;</code></p>
+<p>@method<br>setDrawValues //Enables / disables drawing values (value-text) for all DataSets this data object contains.</p>
+<h2 id="DataSet"><a href="#DataSet" class="headerlink" title="DataSet"></a>DataSet</h2><p>@property list<br><code>Array&lt;DataEntry&gt;</code> //数据集中的所有数据项</p>
+<h2 id="DataEntry"><a href="#DataEntry" class="headerlink" title="DataEntry"></a>DataEntry</h2><p>@property list<br>x //数据项的x坐标<br>y //数据项的y坐标<br>icon //数据项显示时的icon</p>
+<h2 id="ChartXAxis-–-gt-ChartAxisBase"><a href="#ChartXAxis-–-gt-ChartAxisBase" class="headerlink" title="ChartXAxis –&gt; ChartAxisBase"></a>ChartXAxis –&gt; ChartAxisBase</h2><p>@brief<br>Each Line-, Bar-, Scatter-, CandleStick- and RadarChart has an XAxis object.</p>
+<p>@property<br>label //数轴旁边的刻度<br>gridLines //平行于数轴的刻度线</p>
+<p>@method<br>setLabelRotationAngle //设置刻度label的旋转角度</p>
+<h2 id="ChartYAxis-–-gt-ChartAxisBase"><a href="#ChartYAxis-–-gt-ChartAxisBase" class="headerlink" title="ChartYAxis –&gt; ChartAxisBase"></a>ChartYAxis –&gt; ChartAxisBase</h2><p>@brief<br>Each Line-, Bar-, Scatter or CandleStickChart has a left and a right YAxis object, responsible for either the left, or the right axis respectively. The RadarChart has only one YAxis.</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2017/06/20/charts-ios-port-of-MPAndroidChart/" data-id="cj45g4g8u0003qi2cwc5r3dly" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-ios-static-library-and-framework" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2017/06/15/ios-static-library-and-framework/" class="article-date">
+  <time datetime="2017-06-15T05:20:04.000Z" itemprop="datePublished">2017-06-15</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2017/06/15/ios-static-library-and-framework/">ios static library and framework</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>Cocoa Touch Framework 默认仅支持 iOS 8 及之后的系统。<br>Cocoa Touch Static Library 不支持 Swift。</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2017/06/15/ios-static-library-and-framework/" data-id="cj45g4g8q0001qi2c6x404403" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-XCode-compile-flags" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2017/06/15/XCode-compile-flags/" class="article-date">
+  <time datetime="2017-06-15T03:13:05.000Z" itemprop="datePublished">2017-06-15</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2017/06/15/XCode-compile-flags/">XCode compile flags</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>编译源文件生成目标文件</p>
+<p>链接生成App<br>/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -arch arm64<br> -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk<br> -L/Users/it/Library/Developer/Xcode/DerivedData/HelloWorld-aqsxjkpgwopliietielmucyfycyg/Build/Products/Debug-iphoneos<br> -F/Users/it/Library/Developer/Xcode/DerivedData/HelloWorld-aqsxjkpgwopliietielmucyfycyg/Build/Products/Debug-iphoneos<br> -filelist /Users/it/Library/Developer/Xcode/DerivedData/HelloWorld-aqsxjkpgwopliietielmucyfycyg/Build/Intermediates/HelloWorld.build/Debug-iphoneos/HelloWorld.build/Objects-normal/arm64/HelloWorld.LinkFileList<br> -Xlinker -rpath -Xlinker @executable_path/Frameworks -miphoneos-version-min=10.0 -dead_strip -Xlinker -object_path_lto<br> -Xlinker /Users/it/Library/Developer/Xcode/DerivedData/HelloWorld-aqsxjkpgwopliietielmucyfycyg/Build/Intermediates/HelloWorld.build/Debug-iphoneos/HelloWorld.build/Objects-normal/arm64/HelloWorld_lto.o<br> -Xlinker -export_dynamic -Xlinker -no_deduplicate -fembed-bitcode-marker -fobjc-arc -fobjc-link-runtime -framework helloframew<br> -Xlinker -dependency_info<br> -Xlinker /Users/it/Library/Developer/Xcode/DerivedData/HelloWorld-aqsxjkpgwopliietielmucyfycyg/Build/Intermediates/HelloWorld.build/Debug-iphoneos/HelloWorld.build/Objects-normal/arm64/HelloWorld_dependency_info.dat<br> -o /Users/it/Library/Developer/Xcode/DerivedData/HelloWorld-aqsxjkpgwopliietielmucyfycyg/Build/Products/Debug-iphoneos/HelloWorld.app/HelloWorld</p>
+<p>-fobjc-arc<br>   Synthesize retain and release calls for Objective-C pointers<br>   启用Automatic Reference Counting</p>
+<p>-Xlinker <arg><br>   Pass arg to the linker.<br>   传入参数给链接器(ld)</arg></p>
+<p>-isysroot <dir><br>   Set the system root directory (usually /)</dir></p>
+<p>-iquote <directory><br>   Add directory to QUOTE include search path<br>   增加引号方式(#include “”)包含头文件的查找目录</directory></p>
+<p>-include <filename><br>   相当于执行编译之前, 在源文件中增加一个#include <filename></filename></filename></p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2017/06/15/XCode-compile-flags/" data-id="cj45g4g8m0000qi2c8o6kvs3i" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-cocoapods" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2017/06/15/cocoapods/" class="article-date">
+  <time datetime="2017-06-15T01:39:28.000Z" itemprop="datePublished">2017-06-15</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2017/06/15/cocoapods/">cocoapods</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>pod install<br>Use pod install to install new pods in your project.<br>adding/removing pods to a project already using CocoaPods.</p>
+<p>pod update [PODNAME]<br>only when you want to update pods to a newer version.</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2017/06/15/cocoapods/" data-id="cj45g4g8s0002qi2cxof05mli" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-hello-world" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2017/06/13/hello-world/" class="article-date">
+  <time datetime="2017-06-13T04:14:02.000Z" itemprop="datePublished">2017-06-13</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2017/06/13/hello-world/">Hello World</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="external">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="external">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="external">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="external">GitHub</a>.</p>
+<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo new <span class="string">"My New Post"</span></div></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="external">Writing</a></p>
+<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo server</div></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="external">Server</a></p>
+<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo generate</div></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="external">Generating</a></p>
+<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo deploy</div></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="external">Deployment</a></p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2017/06/13/hello-world/" data-id="cj45g4g900004qi2c9q7rl600" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+
+  
+    
+
+  
+    
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Archives</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/06/">June 2017</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Recent Posts</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2017/06/20/charts-ios-port-of-MPAndroidChart/">charts ios port of MPAndroidChart</a>
+          </li>
+        
+          <li>
+            <a href="/2017/06/15/ios-static-library-and-framework/">ios static library and framework</a>
+          </li>
+        
+          <li>
+            <a href="/2017/06/15/XCode-compile-flags/">XCode compile flags</a>
+          </li>
+        
+          <li>
+            <a href="/2017/06/15/cocoapods/">cocoapods</a>
+          </li>
+        
+          <li>
+            <a href="/2017/06/13/hello-world/">Hello World</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy; 2017 John Doe<br>
+      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+
+
+  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+  <script src="/fancybox/jquery.fancybox.pack.js"></script>
+
+
+<script src="/js/script.js"></script>
+
+  </div>
+</body>
+</html>

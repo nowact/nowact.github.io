@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>XCode compile flags | Hexo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="编译源文件生成目标文件 链接生成App/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.plat">
+<meta property="og:type" content="article">
+<meta property="og:title" content="XCode compile flags">
+<meta property="og:url" content="http://yoursite.com/2017/06/15/XCode-compile-flags/index.html">
+<meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="编译源文件生成目标文件 链接生成App/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.plat">
+<meta property="og:updated_time" content="2017-06-22T09:20:55.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="XCode compile flags">
+<meta name="twitter:description" content="编译源文件生成目标文件 链接生成App/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.plat">
+  
+    <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  
+    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  
+  <link rel="stylesheet" href="/css/style.css">
+  
+
+</head>
+
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">Hexo</a>
+      </h1>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://yoursite.com"></form>
+      </div>
+    </div>
+  </div>
+</header>
+      <div class="outer">
+        <section id="main"><article id="post-XCode-compile-flags" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2017/06/15/XCode-compile-flags/" class="article-date">
+  <time datetime="2017-06-15T03:13:05.000Z" itemprop="datePublished">2017-06-15</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      XCode compile flags
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>编译源文件生成目标文件</p>
+<p>链接生成App<br>/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -arch arm64<br> -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk<br> -L/Users/it/Library/Developer/Xcode/DerivedData/HelloWorld-aqsxjkpgwopliietielmucyfycyg/Build/Products/Debug-iphoneos<br> -F/Users/it/Library/Developer/Xcode/DerivedData/HelloWorld-aqsxjkpgwopliietielmucyfycyg/Build/Products/Debug-iphoneos<br> -filelist /Users/it/Library/Developer/Xcode/DerivedData/HelloWorld-aqsxjkpgwopliietielmucyfycyg/Build/Intermediates/HelloWorld.build/Debug-iphoneos/HelloWorld.build/Objects-normal/arm64/HelloWorld.LinkFileList<br> -Xlinker -rpath -Xlinker @executable_path/Frameworks -miphoneos-version-min=10.0 -dead_strip -Xlinker -object_path_lto<br> -Xlinker /Users/it/Library/Developer/Xcode/DerivedData/HelloWorld-aqsxjkpgwopliietielmucyfycyg/Build/Intermediates/HelloWorld.build/Debug-iphoneos/HelloWorld.build/Objects-normal/arm64/HelloWorld_lto.o<br> -Xlinker -export_dynamic -Xlinker -no_deduplicate -fembed-bitcode-marker -fobjc-arc -fobjc-link-runtime -framework helloframew<br> -Xlinker -dependency_info<br> -Xlinker /Users/it/Library/Developer/Xcode/DerivedData/HelloWorld-aqsxjkpgwopliietielmucyfycyg/Build/Intermediates/HelloWorld.build/Debug-iphoneos/HelloWorld.build/Objects-normal/arm64/HelloWorld_dependency_info.dat<br> -o /Users/it/Library/Developer/Xcode/DerivedData/HelloWorld-aqsxjkpgwopliietielmucyfycyg/Build/Products/Debug-iphoneos/HelloWorld.app/HelloWorld</p>
+<p>-fobjc-arc<br>   Synthesize retain and release calls for Objective-C pointers<br>   启用Automatic Reference Counting</p>
+<p>-Xlinker <arg><br>   Pass arg to the linker.<br>   传入参数给链接器(ld)</arg></p>
+<p>-isysroot <dir><br>   Set the system root directory (usually /)</dir></p>
+<p>-iquote <directory><br>   Add directory to QUOTE include search path<br>   增加引号方式(#include “”)包含头文件的查找目录</directory></p>
+<p>-include <filename><br>   相当于执行编译之前, 在源文件中增加一个#include <filename></filename></filename></p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2017/06/15/XCode-compile-flags/" data-id="cj45g4g8m0000qi2c8o6kvs3i" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+    <a href="/2017/06/15/ios-static-library-and-framework/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Newer</strong>
+      <div class="article-nav-title">
+        
+          ios static library and framework
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2017/06/15/cocoapods/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">cocoapods</div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+
+  
+    
+
+  
+    
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Archives</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/06/">June 2017</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Recent Posts</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2017/06/20/charts-ios-port-of-MPAndroidChart/">charts ios port of MPAndroidChart</a>
+          </li>
+        
+          <li>
+            <a href="/2017/06/15/ios-static-library-and-framework/">ios static library and framework</a>
+          </li>
+        
+          <li>
+            <a href="/2017/06/15/XCode-compile-flags/">XCode compile flags</a>
+          </li>
+        
+          <li>
+            <a href="/2017/06/15/cocoapods/">cocoapods</a>
+          </li>
+        
+          <li>
+            <a href="/2017/06/13/hello-world/">Hello World</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy; 2017 John Doe<br>
+      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+
+
+  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+  <script src="/fancybox/jquery.fancybox.pack.js"></script>
+
+
+<script src="/js/script.js"></script>
+
+  </div>
+</body>
+</html>
